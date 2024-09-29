@@ -4704,3 +4704,30 @@ input, select, textarea {
   width: 100%;
   height: 100%;
 }
+
+/* Add the Form embed code here */
+
+.google-form-container {
+  width: 100%; /* make the container full-width */
+  max-width: 800px; /* set a maximum width */
+  margin: 40px auto; /* add some margin and center the container */
+}
+
+.google-form-container iframe {
+  width: 100%; /* make the iframe full-width */
+  height: 100vh; /* set the iframe height to the full viewport height */
+  border: none; /* remove the border */
+}
+
+/* media queries to adjust the form size on different screen sizes */
+@media (max-width: 768px) {
+  .google-form-container iframe {
+    height: 600px; /* adjust the iframe height on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .google-form-container iframe {
+    height: 400px; /* adjust the iframe height on even smaller screens */
+  }
+}
