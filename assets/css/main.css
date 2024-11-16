@@ -3282,9 +3282,10 @@ input, select, textarea {
 		}
 
 
-/*@media (max-width: auto) {
+@media (max-width: 768px) {
     #wrapper > .bg {
-        background-size: auto, auto, contain;
+        background-size: cover;
+		background-position: center;
     }
 }
 
@@ -3292,7 +3293,7 @@ input, select, textarea {
     #wrapper > .bg {
         background-size: auto, auto, cover;
     }
-}*/
+}
 
 /* Intro */
 
