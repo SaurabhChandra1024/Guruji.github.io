@@ -119,17 +119,23 @@
 							margin: auto;
 							overflow: hidden;
 						}
+						.carousel{
+							height: 60vh;
+
+						}
 						.carousel img {
 							width: 100%;
-							max-height: 1080px; /* Adjust the max-height as appropriate */
-							object-fit: cover; /* Ensures the image fills the container without distortion */
+							max-height: 100%; /* Adjust the max-height as appropriate */
+							object-fit: contain; /* Ensures the image fills the container without distortion */
 							display: block;
 						}
 						.slide {
 							display: none;
+							
 						}
 						.slide.active {
 							display: block;
+							height: 100%;
 						}
 						.prev, .next {
 							cursor: pointer;
