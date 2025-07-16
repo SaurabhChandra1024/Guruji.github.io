@@ -183,36 +183,137 @@
 						}
 					</script>
 
-					<!-- One -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-						<p><span class="image left"><img src="images/Temple.jpg" alt="" /></span><h2>ISKCON Lucknow Temple</h2>The construction, initiated in 2015, remains an ongoing endeavor under the vigilant supervision of H.G Aparimay Shyam Das Ji. Despite the passage of time, the project continues to progress, with the temple's framework gradually taking shape. The construction site is a testament to the unwavering dedication of the devotees and the unrelenting efforts of H.G Aparimay Shyam Das Ji, who oversees every aspect of the project. As the temple's completion draws near, the excitement among devotees grows, and the anticipation of a grand spiritual hub in Lucknow becomes increasingly palpable, awaiting the day of its grand inauguration.</p>
-						</div>
-					</section>
+					<!-- Modern Info Sections -->
+					<style>
+						.info-sections {
+							display: flex;
+							flex-direction: column;
+							gap: 2.5rem;
+							max-width: 1100px;
+							margin: 3rem auto 2rem auto;
+							padding: 0 1rem;
+						}
+						.info-card {
+							display: flex;
+							flex-direction: row;
+							align-items: center;
+							background: #fff;
+							box-shadow: 0 4px 24px rgba(0,0,0,0.07), 0 1.5px 6px rgba(0,0,0,0.05);
+							border-radius: 1.25rem;
+							overflow: hidden;
+							transition: box-shadow 0.2s;
+						}
+						.info-card.reverse {
+							flex-direction: row-reverse;
+						}
+						.info-card-image {
+							flex: 0 0 320px;
+							height: 260px;
+							overflow: hidden;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							background: #f7f7f7;
+						}
+						.info-card-image img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+							border-radius: 0;
+							transition: transform 0.3s;
+						}
+						.info-card:hover .info-card-image img {
+							transform: scale(1.04);
+						}
+						.info-card-content {
+							flex: 1 1 0;
+							padding: 2rem 2.5rem;
+						}
+						.info-card-content h2 {
+							margin-top: 0;
+							font-size: 2rem;
+							font-weight: 700;
+							color: #2d3a4a;
+							margin-bottom: 0.7rem;
+							letter-spacing: 0.01em;
+						}
+						.info-card-content p {
+							font-size: 1.08rem;
+							color: #444;
+							line-height: 1.7;
+							margin: 0;
+						}
+						@media (max-width: 900px) {
+							.info-card, .info-card.reverse {
+								flex-direction: column;
+							}
+							.info-card-image {
+								width: 100%;
+								height: 220px;
+							}
+							.info-card-content {
+								padding: 1.5rem 1.2rem;
+							}
+						}
+						@media (max-width: 600px) {
+							.info-sections {
+								gap: 1.5rem;
+							}
+							.info-card-content h2 {
+								font-size: 1.3rem;
+							}
+							.info-card-image {
+								height: 160px;
+							}
+						}
+					</style>
 
-					<!-- Two -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-						<p><span class="image left"><img src="images/Book1.jpg" alt="" /></span><h2>"Bhakti Sanatan Dharm Ka Aadhaar"</h2>"Bhakti Sanatan Dharm Ka Aadhaar" is a seminal work penned by HG Aparimaya Shyam Das, a distinguished scholar and devotee of the International Society for Krishna Consciousness (ISKCON). This treatise provides an in-depth examination of the role of devotion as the fundamental basis of all spiritual traditions. Through a meticulous analysis of scriptural references and philosophical frameworks, the author elucidates the universal principles of bhakti, or loving devotion, and its significance in achieving spiritual growth and self-realization. This book offers a profound and insightful exploration of the human condition, making it a valuable resource for scholars, spiritual seekers, and devotees.</p>
+					<div class="info-sections">
+						<div class="info-card">
+							<div class="info-card-image">
+								<img src="images/Temple.jpg" alt="ISKCON Lucknow Temple">
+							</div>
+							<div class="info-card-content">
+								<h2>ISKCON Lucknow Temple</h2>
+								<p>
+									Construction began in 2015 and continues under the guidance of H.G Aparimay Shyam Das Ji. The temple's framework is a testament to the dedication of devotees and the tireless supervision of Guruji. As completion nears, anticipation grows for this grand spiritual hub in Lucknow.
+								</p>
+							</div>
 						</div>
-					</section>
-
-					<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-						<p><span class="image left"><img src="images/Gov.jpg" alt="" /></span><h2>Meeting with Government Officials</h2>HG Aparimaya Shyam Das ji, a renowned ISKCON devotee, met with High-ranking government officials of the Uttar Pradesh government to discuss the promotion of spiritual and cultural values. The meeting aimed to explore ways to integrate spirituality into governance and education, fostering a more harmonious and values-based society.</p>
+						<div class="info-card reverse">
+							<div class="info-card-image">
+								<img src="images/Book1.jpg" alt="Bhakti Sanatan Dharm Ka Aadhaar">
+							</div>
+							<div class="info-card-content">
+								<h2>"Bhakti Sanatan Dharm Ka Aadhaar"</h2>
+								<p>
+									This seminal work by HG Aparimaya Shyam Das explores devotion as the foundation of all spiritual traditions. Through scriptural analysis and philosophical insight, the book highlights the universal principles of bhakti and its role in spiritual growth and self-realization.
+								</p>
+							</div>
 						</div>
-					</section>
-					
-					<!-- Four -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-						<p><span class="image left"><img src="images/poster.jpg" alt="" /></span><h2>Prabhupad Youth Army</h2>The Prabhupad Youth Army (PYA) was established on August 15, 2023, to promote spiritual development among young minds. Guided by H.G. Aparimay Shyamdas Ji, the PYA offers a comprehensive curriculum rooted in Srila Prabhupada's teachings. The program aims to empower youth with spiritual values, compassion, and responsibility.</p>
+						<div class="info-card">
+							<div class="info-card-image">
+								<img src="images/Gov.jpg" alt="Meeting with Government Officials">
+							</div>
+							<div class="info-card-content">
+								<h2>Meeting with Government Officials</h2>
+								<p>
+									HG Aparimaya Shyam Das Ji met with senior Uttar Pradesh officials to discuss integrating spiritual and cultural values into governance and education, aiming to foster a harmonious, values-based society.
+								</p>
+							</div>
 						</div>
-					</section>
-
-
-					
+						<div class="info-card reverse">
+							<div class="info-card-image">
+								<img src="images/poster.jpg" alt="Prabhupad Youth Army">
+							</div>
+							<div class="info-card-content">
+								<h2>Prabhupad Youth Army</h2>
+								<p>
+									Established on August 15, 2023, the Prabhupad Youth Army (PYA) nurtures spiritual growth among youth, guided by H.G. Aparimay Shyam Das Ji. The program empowers young minds with values, compassion, and responsibility rooted in Srila Prabhupada's teachings.
+								</p>
+							</div>
+						</div>
+					</div></div>
 						<!-- Posts 
 							<section class="posts">
 								<article>
